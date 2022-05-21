@@ -27,33 +27,116 @@
 
 .page__header-logo {
   margin: 18px 41px 19px 0;
+  text-decoration: none;
 }
 
-.page__header-logo:hover {
+.page__header-logo-svg:hover {
   opacity: 0.7;
 }
 
-/* toDo разобраться с формой поиска */
-
-/* toDo задать иконкам назначение */
-.page__header-menu:hover {
-  opacity: 0.7;
+.page__header-logo-svg:active {
+  transform: scale(1.1);
 }
+
+/* toDo задать всплывающую форму поиска */
+.page__header-search {
+  fill: #E8E8E8;
+  text-decoration: none;
+  /* position: relative; */
+}
+
+/* .page__header-search-svg {
+  position: absolute;
+} */
+
+.page__header-search-svg:hover {
+  fill: #F16D7F;
+}
+
+/* .page__header-search:hover .page__header-search-input {
+  display: flex;
+}
+
+[type=search] {
+  padding: 10px 20px;
+  border: none;
+}
+
+.page__header-search-input {
+  display: none;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+
+} */
+
+
+
+/* toDo задать всплывающее меню */
+.page__header-menu {
+  fill: #E8E8E8;
+  text-decoration: none;
+}
+
+.page__header-menu-svg:hover {
+  fill: #F16D7F;
+}
+
+/* .page__header-menu-svg:active {
+  fill: #E8E8E8;
+  transform: scale(1.1);
+} */
 
 .page__header-account {
-  margin: 26px 11px 20px 33px;
+  fill: #E8E8E8;
+  margin: 26px 0 20px 33px;
+  text-decoration: none;
 }
 
-.page__header-account:hover {
-  opacity: 0.7;
+.page__header-account-svg:hover {
+  fill: #F16D7F;
+}
+
+.page__header-account-svg:active {
+  fill: #E8E8E8;
+  transform: scale(1.1);
 }
 
 .page__header-cart {
   margin: 26px 0 20px 33px;
+  text-decoration: none;
+  position: relative;
 }
 
-.page__header-cart:hover {
-  opacity: 0.7;
+.page__header-cart-svg {
+  fill: #E8E8E8;
+}
+
+.page__header-cart-svg:hover {
+  fill: #F16D7F;
+}
+
+.page__header-cart-svg:active {
+  fill: #F16D7F;
+  fill: #E8E8E8;
+  transform: scale(1.1);
+}
+
+.cart_number {
+  width: 19px;
+  height: 19px;
+  background-color: #F16D7F;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  position: absolute;
+  top: -22px;
+  left: 23px;
 }
 
 /* the brand of luxerious fashion */
@@ -108,9 +191,8 @@
 }
 
 /* categories */
-
 .categories__list {
-  margin-bottom: 96px;
+  margin-bottom: 66px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -150,4 +232,357 @@
   line-height: 29px;
   text-align: center;
   color: #F16D7F;
+}
+
+/* products */
+.products_txt {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.products__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  margin-bottom: 6px;
+}
+
+.products__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+}
+
+/* cards */
+.card__box_up {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__box_down {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 360px;
+  height: 582px;
+  background: #F8F8F8;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__heading {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 25px 0 13px 18px;
+}
+
+.card__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  margin-left: 16px;
+  width: 315px;
+}
+
+.card__price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+  margin: 18px 0 20px 18px;
+}
+
+/*add to cart при наведении на карточку товара */
+.card__button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 139px;
+  min-height: 44px;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__button_svg {
+  fill: #fff;
+  margin: 0 11px 0 0;
+}
+
+.card__button_txt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.card:hover .card__button {
+  display: flex;
+}
+
+.card:hover .card__button:hover {
+  background-color: #F16D7F;
+}
+
+.card:hover .card__button:active {
+  background-color: #222224;
+}
+
+
+.card:hover .card__img {
+  filter: brightness(40%);
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* кнопка Browse All Product */
+.products__button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  border: 1px solid #FF6A6A;
+  background: #FFFFFF;
+  padding: 14px 38px;
+  margin: 18px auto 0 auto;
+  display: block;
+}
+
+.products__button:hover {
+  transform: scale(1.1);
+  background: #F3EDED;
+}
+
+.products__button:active {
+  background-color: #F16D7F;
+  border: 1px solid #FF6A6A;
+  color: #FFFFFF;
+}
+
+/* options */
+.options {
+  width: 100%;
+  max-height: 341px;
+  background: #222224;
+  margin-top: 95px;
+  padding: 103px 0 104px 0;
+}
+
+.options__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.options__item {
+  width: 360px;
+  text-align: center;
+}
+
+.options__heading {
+  font-weight: 400;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #FBFBFB;
+  margin: 28px auto 16px auto;
+}
+
+.options__text {
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+/* footer__subscribe */
+.footer__content {
+  min-height: 448px;
+  background-image: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(img/foot_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 97px;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 360px;
+}
+
+.footer__avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.footer__avatar_img {
+  width: 150%;
+  height: 150%;
+  position: relative;
+  top: -5px;
+  left: -24px;
+}
+
+.footer__avatar_txt {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+  margin-top: 30px;
+}
+
+.avatar_txt {
+  font-style: italic;
+}
+
+.footer__subscribe {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer__subscribe_heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #222224;
+}
+
+.footer__subscribe_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #222224;
+}
+
+.footer__subscribe_form {
+  display: flex;
+  margin-top: 32px;
+}
+
+.footer__subscribe_form-email {
+  width: 256px;
+  height: 49px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222224;
+  opacity: 0.67;
+  padding-left: 22px;
+  background: #E1E1E1;
+  border: none;
+  border-radius: 30px 0 0 30px;
+  box-sizing: border-box;
+}
+
+.footer__subscribe_form-button {
+  width: 100px;
+  height: 49px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #F16D7F;
+  border: none;
+  border-radius: 0 30px 30px 0;
+  box-sizing: border-box;
+}
+
+.footer__subscribe_form-button:hover {
+  background: #f1a8b2;
+}
+
+.footer__subscribe_form-button:active {
+  background: #FFFFFF;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+}
+
+/* copyright */
+.copyright {
+  background: #222224;
+}
+
+.copyright__box {
+  min-height: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+}
+
+.copyright__icons {
+  width: 148px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.copyright__links {
+  width: 32px;
+  height: 32px;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__links:active {
+  background: #F16D7F;
+}
+
+.copyright__links_svg {
+  fill: #000000;
+}
+
+.copyright__links_svg:hover {
+  fill: #F16D7F;
+}
+
+.copyright__links_svg:active {
+  fill: #FFFFFF;
 }
