@@ -43,16 +43,16 @@
 }
 
 /* логотип */
-.page__header-logo {
+.page__header_logo {
   text-decoration: none;
   margin-right: 41px;
 }
 
-.page__header-logo-svg:hover {
+.page__header_logo_svg:hover {
   opacity: 0.7;
 }
 
-.page__header-logo-svg:active {
+.page__header_logo_svg:active {
   transform: scale(1.1);
 }
 
@@ -242,35 +242,35 @@
 }
 
 /* аккаунт/регистрация */
-.page__header-account {
+.page__header_account {
   fill: #E8E8E8;
   text-decoration: none;
 }
 
-.page__header-account-svg:hover {
+.page__header_account_svg:hover {
   fill: #F16D7F;
 }
 
-.page__header-account-svg:active {
+.page__header_account_svg:active {
   fill: #E8E8E8;
   transform: scale(1.1);
 }
 
 /* корзина */
-.page__header-cart {
+.page__header_cart {
   text-decoration: none;
   position: relative;
 }
 
-.page__header-cart-svg {
+.page__header_cart_svg {
   fill: #E8E8E8;
 }
 
-.page__header-cart-svg:hover {
+.ppage__header_cart_svg:hover {
   fill: #F16D7F;
 }
 
-.page__header-cart-svg:active {
+.page__header_cart_svg:active {
   fill: #F16D7F;
   fill: #E8E8E8;
   transform: scale(1.1);
@@ -649,7 +649,7 @@
   margin-top: 32px;
 }
 
-.footer__subscribe_form-email {
+.footer__subscribe_form_email {
   width: 256px;
   height: 49px;
   font-weight: 400;
@@ -664,7 +664,7 @@
   box-sizing: border-box;
 }
 
-.footer__subscribe_form-button {
+.footer__subscribe_form_button {
   width: 100px;
   height: 49px;
   font-weight: 400;
@@ -681,11 +681,11 @@
   box-sizing: border-box;
 }
 
-.footer__subscribe_form-button:hover {
+.footer__subscribe_form_button:hover {
   background: #f1a8b2;
 }
 
-.footer__subscribe_form-button:active {
+.footer__subscribe_form_button:active {
   background: #FFFFFF;
   color: #F16D7F;
   border: 1px solid #F16D7F;
