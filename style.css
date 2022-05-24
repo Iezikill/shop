@@ -45,6 +45,7 @@
 /* логотип */
 .page__header-logo {
   text-decoration: none;
+  margin-right: 41px;
 }
 
 .page__header-logo-svg:hover {
