@@ -80,6 +80,10 @@
   left: 32px;
 }
 
+.page__header_search_input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
 .page__header_search_input:focus {
   width: 200px;
   height: 30px;
