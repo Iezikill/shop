@@ -766,7 +766,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 39px;
 }
 
 .top__page_title {
@@ -813,7 +812,7 @@
 /* Каталог */
 .top__catalog {
   display: flex;
-  margin-bottom: 28px;
+  margin: 39px 0 28px 0;
 }
 
 /* фильтр */
@@ -840,10 +839,9 @@ button:focus-visible {
   padding: 13px 16px 16px 16px;
   box-sizing: border-box;
   background: #FFFFFF;
-  /* box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21); */
-  /* NB! */
   position: relative;
   z-index: 10;
+  margin-right: 30px;
 }
 
 .filter__button {
@@ -924,10 +922,6 @@ button:focus-visible {
   text-decoration: none;
 }
 
-/* .filter__list_item:hover::before {
-  background-color: red;
-} */
-
 .filter__list_item:hover a {
   color: #EF5B70;
 }
@@ -972,13 +966,14 @@ button:focus-visible {
 }
 
 /* сортировка */
-/* toDo доделать сортировку */
 .sorting {
   display: flex;
+  max-width: 296px;
+  padding-top: 13px;
+  justify-content: space-around;
 }
 
 .sorting__link {
-  width: 132px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -986,13 +981,13 @@ button:focus-visible {
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
+  display: block;
 }
 
 .sorting__svg {
   fill: #6F6E6E;
   position: absolute;
-  top: 40%;
-  left: 60%;
+  padding: 5px 10px;
 }
 
 .sorting__link:hover {
@@ -1011,105 +1006,65 @@ button:focus-visible {
   fill: currentColor;
 }
 
-.list-size {
-  width: 80px;
+.size__form {
+  width: 79px;
   border: none;
   background-color: transparent;
   position: relative;
   z-index: 10;
-  margin-top: 12px;
-}
-
-.list-size-btn-title {
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  border: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16.8px;
-  color: #6F6E6E;
-  background-color: transparent;
-  text-align: left;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.list-size-btn-title svg {
-  fill: #6F6E6E;
-  position: absolute;
-  top: 40%;
-  left: 60%;
-}
-
-.list-size-btn-title:hover {
-  color: #F16D7F;
-}
-
-.list-size-btn-title:hover svg {
-  fill: currentColor;
-}
-
-.list-size-btn-title:active {
-  color: black;
-}
-
-.list-size-btn-title:active svg {
-  fill: currentColor;
+  margin-left: 48px;
 }
 
 #switch {
   display: none;
 }
 
-#switch:checked~.list-size-wrp {
+#switch:checked~.size__form_wrp {
   display: flex;
 }
 
-.list-size-wrp {
+.size__form_wrp {
   width: 79px;
   display: none;
   flex-direction: column;
-  margin: 5px 0 0 0;
-  padding: 9.5px 9.5px 9.5px 31px;
+  margin: 5px 0 0 -9px;
+  padding: 9px 9px 9px 31px;
   box-sizing: border-box;
   background-color: #fff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
-  top: 18px;
-  left: 0px;
 }
 
-.list-size-item {
+.size__form_item {
   display: none;
 }
 
-.list-size-item:nth-child(1):checked~.list-size-item-title:nth-child(2)::before,
-.list-size-item:nth-child(3):checked~.list-size-item-title:nth-child(4)::before,
-.list-size-item:nth-child(5):checked~.list-size-item-title:nth-child(6)::before,
-.list-size-item:nth-child(7):checked~.list-size-item-title:nth-child(8)::before {
+.size__form_item:nth-child(3):checked~.size__form_title:nth-child(4)::before,
+.size__form_item:nth-child(1):checked~.size__form_title:nth-child(2)::before,
+.size__form_item:nth-child(5):checked~.size__form_title:nth-child(6)::before,
+.size__form_item:nth-child(7):checked~.size__form_title:nth-child(8)::before {
   background-color: #F16D7F;
+  outline: 1px solid white;
+  outline-offset: -3px;
 }
 
-.list-size-item-title {
+.size__form_title {
   display: block;
   margin: 0 0 6px 0;
   position: relative;
   text-transform: uppercase;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'Roboto';
+  font-weight: 400;
   font-size: 14px;
-  line-height: 16.41px;
+  line-height: 16px;
   color: #6F6E6E;
 }
 
-.list-size-item-title:before {
+.size__form_title:before {
   content: "";
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   border: 1px solid #EBEBEB;
   position: absolute;
   top: 1px;
