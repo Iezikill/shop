@@ -50,6 +50,8 @@
 
 .page__header_logo_svg:hover {
   opacity: 0.7;
+  transform: rotate(360deg);
+  transition: transform 1s;
 }
 
 .page__header_logo_svg:active {
