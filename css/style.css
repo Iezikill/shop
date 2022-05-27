@@ -54,6 +54,7 @@
 
 .page__header_logo_svg:active {
   transform: scale(1.1);
+  transition: transform 1s;
 }
 
 /* форма поиска */
@@ -75,7 +76,7 @@
   outline: none;
   background-color: #F1E4E6;
   border: none;
-  transition: width 1s;
+  transition: width .8s;
   position: absolute;
   left: 32px;
 }
@@ -98,6 +99,7 @@
 .page__header_search_svg:active {
   fill: #E8E8E8;
   transform: scale(1.1);
+  transition: transform 1s;
 }
 
 
@@ -140,6 +142,7 @@
 .page__header_menu_button:active .page__header_menu_span::after {
   background-color: #E8E8E8;
   transform: scale(1.1);
+  transition: transform 1s;
 }
 
 .page__header_menu_span::before,
@@ -190,6 +193,7 @@
 .menu__close_button_svg:active {
   fill: #6F6E6E;
   transform: scale(1.1);
+  transition: transform 1s;
 }
 
 /* стили всплывающего меню */
@@ -258,6 +262,7 @@
 .page__header_account_svg:active {
   fill: #E8E8E8;
   transform: scale(1.1);
+  transition: transform 1s;
 }
 
 /* корзина */
@@ -277,6 +282,7 @@
 .page__header_cart_svg:active {
   fill: #E8E8E8;
   transform: scale(1.1);
+  transition: transform 1s;
 }
 
 .cart_number {
@@ -305,6 +311,7 @@
   background-color: #F16D7F;
   color: #E8E8E8;
   transform: scale(1.1);
+  transition: transform 1s;
 }
 
 /* the brand of luxerious fashion */
@@ -550,6 +557,7 @@
 
 .browse_all__button:hover {
   transform: scale(1.1);
+  transition: transform 1s;
   background: #F3EDED;
 }
 
@@ -1218,6 +1226,7 @@ button:focus-visible {
 .carousel-control-next:active .carousel-control-next-svg {
   fill: #F16D7F;
   transform: scale(1.1);
+  transition: transform 1s;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1326,6 +1335,7 @@ button:focus-visible {
   color: #F26376;
   fill: #F26376;
   transform: scale(1.1);
+  transition: transform 1s;
 }
 
 .product__button_svg {
