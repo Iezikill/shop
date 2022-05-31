@@ -1353,3 +1353,255 @@ button:focus-visible {
 .product__bottom {
   margin: 128px auto 98px auto;
 }
+
+
+/* страница Cart */
+.cart {
+  display: flex;
+  justify-content: space-between;
+  margin: 98px auto 128px;
+}
+
+/* товары, добавленные в корзину */
+.cart__content {
+  width: 652px;
+}
+
+.cart__product {
+  display: flex;
+  height: 306px;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.cart__product_img {
+  width: 262px;
+  height: 306px;
+}
+
+.cart__product_desc {
+  margin: 22px 97px 62px 31px;
+
+}
+
+.cart__product_title {
+  max-width: 200px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+
+.cart__product_list {
+  list-style-type: none;
+}
+
+.cart__product_item {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  margin-bottom: 6px;
+}
+
+.price_span {
+  color: #EF5B70;
+}
+
+.item_span {
+  color: #6F6E6E;
+}
+
+.quantity_box {
+  display: flex;
+}
+
+.quantity_box_form {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+  border: solid 1px #EAEAEA;
+  margin-left: 24px;
+  padding: 0 16px;
+}
+
+.cart__product_button {
+  border: none;
+  background: none;
+  fill: #575757;
+  position: absolute;
+  top: 9%;
+  right: 5%;
+}
+
+.cart__product_button:hover {
+  fill: #A4A4A4;
+}
+
+.cart__product_button:active {
+  fill: #EF5B70;
+}
+
+/* кнопки управления содержимым корзины */
+.cart__control {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+
+.cart__control_button {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 16px 39px;
+  background: none;
+  border: 1px solid #A4A4A4;
+  box-sizing: border-box;
+}
+
+.cart__control_button:hover {
+  color: #FFFFFF;
+  background: #F16D7F;
+  border: 1px solid #F16D7F;
+}
+
+.cart__control_button:active {
+  color: #000000;
+  background: none;
+  border: 1px solid #A4A4A4;
+  transform: scale(1.1);
+  transition: transform 1s;
+}
+
+.cart__form {
+  width: 360px;
+  margin-top: 18px;
+}
+
+/* адрес доставки */
+.cart__form_title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.cart__form_text {
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+  border: 1px solid #A4A4A4;
+  margin-top: 20px;
+  padding: 13px 0 16px 17px;
+}
+
+.cart__form_text:hover {
+  color: #B1B1B1;
+  outline: 1px solid #F16D7F;
+}
+
+.cart__form_button {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  border: 1px solid #A4A4A4;
+  background: none;
+  padding: 10px 14px 12px 15px;
+  margin: 23px 0 57px;
+}
+
+.cart__form_button:hover {
+  color: #FFFFFF;
+  background: #F16D7F;
+  border: 1px solid #F16D7F;
+}
+
+.cart__form_button:active {
+  color: #4A4A4A;
+  background: none;
+  border: 1px solid #A4A4A4;
+  transform: scale(1.1);
+  transition: transform 1s;
+}
+
+/* итого к оплате */
+.cart__order {
+  width: 100%;
+  background: #F5F3F3;
+}
+
+.cart__order_desc {
+  text-align: right;
+  padding: 39px 37px 21px;
+}
+
+.cart__order_text {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  text-transform: uppercase;
+}
+
+.cart__order_text span {
+  margin-left: 26px;
+}
+
+.cart__order_title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.cart__order_title span {
+  font-weight: 700;
+  color: #F16D7F;
+  margin-left: 24px;
+}
+
+.cart_hr {
+  width: 275px;
+  border: 0.5px solid #E2E2E2;
+  margin: 0 auto;
+}
+
+.cart__order_submit {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background: #F16D7F;
+  border: 1px solid #F16D7F;
+  text-transform: uppercase;
+  padding: 14px 41px;
+  margin: 17px 42px 43px;
+}
+
+.cart__order_submit:hover {
+  color: #F16D7F;
+  background: #FFFFFF;
+  border: 1px solid #F16D7F;
+}
+
+.cart__order_submit:active {
+  color: #FFFFFF;
+  background: #F16D7F;
+  border: 1px solid #F16D7F;
+  transform: scale(1.1);
+  transition: transform 1s;
+}

@@ -162,6 +162,85 @@
                 <h2 class="top__page_title">Shopping cart</h2>
             </div>
         </section>
+        <form action="#" class="cart container">
+            <!-- товары, добавленные в корзину -->
+            <div class="cart__content">
+                <section class="cart__product">
+                    <img class="cart__product_img" src="img/card3.png" alt="card">
+                    <div class="cart__product_desc">
+                        <h4 class="cart__product_title">Mango people t-shirt</h4>
+                        <ul class="cart__product_list">
+                            <li class="cart__product_item">Price: <span class="price_span">$300</span></li>
+                            <li class="cart__product_item">Color: <span class="item_span">Red</span></li>
+                            <li class="cart__product_item">Size: <span class="item_span">Xl</span></li>
+                            <li class="cart__product_item quantity_box">Quantity:
+                                <div class="quantity_box_form">
+                                    <p>2</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="cart__product_button" type="button">
+                        <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" />
+                        </svg>
+                    </button>
+                </section>
+                <section class="cart__product">
+                    <img class="cart__product_img" src="img/card2.2.png" alt="card">
+                    <div class="cart__product_desc">
+                        <h4 class="cart__product_title">Mango people t-shirt</h4>
+                        <ul class="cart__product_list">
+                            <li class="cart__product_item">Price: <span class="price_span">$300</span></li>
+                            <li class="cart__product_item">Color: <span class="item_span">Red</span></li>
+                            <li class="cart__product_item">Size: <span class="item_span">Xl</span></li>
+                            <li class="cart__product_item quantity_box">Quantity:
+                                <div class="quantity_box_form">
+                                    <p>2</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="cart__product_button" type="button">
+                        <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" />
+                        </svg>
+                    </button>
+                </section>
+                <!-- кнопки управления содержимым корзины -->
+                <div class="cart__control">
+                    <button class="cart__control_button" type="button">Clear shopping cart</button>
+                    <button class="cart__control_button" type="button">Continue shopping</button>
+                </div>
+            </div>
+            <section class="cart__form">
+                <!-- адрес доставки -->
+                <h4 class="cart__form_title">Shipping adress</h4>
+                <div class="cart__form_input">
+                    <label>
+                        <input class="cart__form_text" type="text" size="30" placeholder="Bangladesh">
+                    </label>
+                    <label>
+                        <input class="cart__form_text" type="text" size="30" placeholder="State">
+                    </label>
+                    <label>
+                        <input class="cart__form_text" type="text" size="30" placeholder="Postcode&nbsp;/ Zip"><br>
+                    </label>
+                    <button class="cart__form_button" type="submit">Get a&nbsp;quote</button>
+                </div>
+                <!-- итого к оплате -->
+                <div class="cart__order">
+                    <div class="cart__order_desc">
+                        <p class="cart__order_text">Sub total<span>$900</span></p>
+                        <h5 class="cart__order_title">Grand total <span>$900</span></h5>
+                    </div>
+                    <hr class="cart_hr">
+                    <button class="cart__order_submit" type="submit">Proceed to checkout</button>
+                </div>
+            </section>
+        </form>
     </main>
     <footer class="page_footer">
         <section class="footer__content">
