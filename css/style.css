@@ -1605,3 +1605,151 @@ button:focus-visible {
   transform: scale(1.1);
   transition: transform 1s;
 }
+
+/* страница Registration */
+.registration {
+  display: flex;
+  justify-content: space-between;
+  margin: 64px auto 96px;
+}
+
+.registration__form {
+  max-width: 360px;
+  width: 100%;
+}
+
+/* имя/фамилия */
+.registration__form_heading {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration__form_heading:hover {
+  color: #F16D7F;
+}
+
+.registration__form_heading:active {
+  font-weight: 500;
+}
+
+.registration__form_input {
+  width: 100%;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  border: 1px solid #A4A4A4;
+  box-sizing: border-box;
+  padding: 13px 0 16px 17px;
+  margin-top: 20px;
+}
+
+.registration__form_input:hover {
+  border: 1px solid #F16D7F;
+}
+
+/* выбор пола */
+.registration__form_list {
+  margin: 31px 0 33px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  list-style-type: none;
+  display: flex;
+}
+
+.registration__form_item {
+  margin-right: 20px;
+}
+
+.registration__form_radio {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #A4A4A4;
+  vertical-align: middle;
+  margin: -2px 10px 0 0;
+}
+
+/* логин/пароль */
+.registration__form_pass {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin: 15px 0 39px;
+}
+
+.registration__form_button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background: #F16D7F;
+  border: none;
+  padding: 16px 29px;
+}
+
+.registration__form_button_svg {
+  fill: #FFFFFF;
+  margin-left: 20px;
+}
+
+.registration__form_button:hover {
+  color: #F16D7F;
+  background: #FFFFFF;
+  border: 1px solid #F16D7F;
+}
+
+.registration__form_button:hover .registration__form_button_svg {
+  fill: #F16D7F;
+}
+
+.registration__form_button:active {
+  color: #FFFFFF;
+  background: #F16D7F;
+  border: none;
+  transform: scale(1.1);
+  transition: transform 1s;
+}
+
+.registration__form_button:active .registration__form_button_svg {
+  fill: #FFFFFF;
+}
+
+/* LOYALTY HAS ITS PERKS */
+.registration__loyalty {
+  max-width: 652px;
+}
+
+.registration__loyalty_heading {
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.registration__loyalty_text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration__loyalty_list {
+  margin-top: 22px;
+  list-style-type: none;
+}
+
+.registration__loyalty_item {
+  margin-bottom: 16px;
+}
+
+.registration__loyalty_item::before {
+  content: " ";
+  background: url(../img/reg_marker.svg) no-repeat 0 5px;
+  width: 20px;
+  height: 16px;
+  padding-left: 42px;
+}
