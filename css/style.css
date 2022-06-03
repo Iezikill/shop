@@ -1891,6 +1891,28 @@ button:focus-visible {
   .copyright__box {
     padding: 0 32px;
   }
+
+  /* catalog.html */
+  .top__page_box {
+    margin: auto 16px;
+  }
+
+  .top__catalog {
+    justify-content: space-between;
+    margin: 11px 37px 6px 0;
+  }
+
+  .card3 {
+    display: none;
+  }
+
+  .pagination {
+    margin: 24px auto 0;
+  }
+
+  /* product.html */
+
+
 }
 
 /* адаптив для мобильных устройств */
@@ -2029,4 +2051,6 @@ button:focus-visible {
   .copyright__social {
     margin-bottom: 40px;
   }
+
+  /* catalog.html */
 }
