@@ -1122,12 +1122,11 @@ button:focus-visible {
 }
 
 .size__form {
-  width: 79px;
   border: none;
   background-color: transparent;
   position: relative;
   z-index: 10;
-  margin-left: 48px;
+  margin: 0 48px;
 }
 
 #switch {
@@ -2147,18 +2146,34 @@ button:focus-visible {
     margin-bottom: 46px;
   }
 
+  .top__catalog {
+    margin: 11px 27px 6px 0;
+  }
+
+  .filter {
+    width: auto;
+    margin: 0;
+    padding: 12px 0 6px 8px;
+  }
+
   .filter__button span {
     display: none;
   }
 
   .filter__button svg {
-    width: 82px;
+    width: 37.5px;
     height: 25px;
     margin: 0;
   }
 
+  .filter__list_wrp {
+    width: 200px;
+    padding: 12px 16px 0 8px;
+  }
+
   .sorting {
     max-width: 260px;
+    padding-top: 14px;
   }
 
   .sorting__link {
@@ -2166,5 +2181,12 @@ button:focus-visible {
     line-height: 14px;
   }
 
-  /* доделать сортировку */
+  .sorting__svg {
+    padding-right: 0;
+  }
+
+  .size__form {
+    margin: 0 43px;
+  }
+
 }
