@@ -174,9 +174,7 @@
                             <li class="cart__product_item">Color: <span class="item_span">Red</span></li>
                             <li class="cart__product_item">Size: <span class="item_span">Xl</span></li>
                             <li class="cart__product_item quantity_box">Quantity:
-                                <div class="quantity_box_form">
-                                    <p>2</p>
-                                </div>
+                                <input class="quantity_box_form" type="number" min="1" value="2">
                             </li>
                         </ul>
                     </div>
@@ -196,9 +194,7 @@
                             <li class="cart__product_item">Color: <span class="item_span">Red</span></li>
                             <li class="cart__product_item">Size: <span class="item_span">Xl</span></li>
                             <li class="cart__product_item quantity_box">Quantity:
-                                <div class="quantity_box_form">
-                                    <p>2</p>
-                                </div>
+                                <input class="quantity_box_form" type="number" min="1" value="2">
                             </li>
                         </ul>
                     </div>
@@ -211,7 +207,7 @@
                 </section>
                 <!-- кнопки управления содержимым корзины -->
                 <div class="cart__control">
-                    <button class="cart__control_button" type="button">Clear shopping cart</button>
+                    <button class="cart__control_button" type="reset">Clear shopping cart</button>
                     <button class="cart__control_button" type="button">Continue shopping</button>
                 </div>
             </div>
@@ -219,16 +215,9 @@
                 <!-- адрес доставки -->
                 <h4 class="cart__form_title">Shipping adress</h4>
                 <div class="cart__form_input">
-                    <label>
-                        <input class="cart__form_text" type="text" size="30" placeholder="Bangladesh" required>
-                    </label>
-                    <label>
-                        <input class="cart__form_text" type="text" size="30" placeholder="State" required>
-                    </label>
-                    <label>
-                        <input class="cart__form_text" type="text" size="30" placeholder="Postcode&nbsp;/ Zip"
-                            required><br>
-                    </label>
+                    <input class="cart__form_text" type="text" size="30" placeholder="Bangladesh" required>
+                    <input class="cart__form_text" type="text" size="30" placeholder="State" required>
+                    <input class="cart__form_text" type="text" size="30" placeholder="Postcode&nbsp;/ Zip" required><br>
                     <button class="cart__form_button" type="submit">Get a&nbsp;quote</button>
                 </div>
                 <!-- итого к оплате -->

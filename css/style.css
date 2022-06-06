@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Lato';
+  font-family: 'lato', sans-serif;
   font-style: normal;
 }
 
@@ -568,7 +568,7 @@
   border: 1px solid #FF6A6A;
   background: #FFFFFF;
   padding: 14px 38px;
-  margin: 18px auto 0 auto;
+  margin: 18px auto 96px auto;
   display: block;
 }
 
@@ -588,7 +588,6 @@
 .options {
   max-height: 341px;
   background: #222224;
-  margin-top: 95px;
   padding: 103px 0 104px 0;
 }
 
@@ -596,12 +595,16 @@
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .options__item {
-  width: 360px;
+  width: 315px;
   text-align: center;
+}
+
+.options__img {
+  height: 35px;
 }
 
 .options__heading {
@@ -1116,7 +1119,7 @@ button:focus-visible {
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  margin: 48px auto 0;
+  margin: 48px auto 96px;
 
 }
 
@@ -1436,6 +1439,9 @@ button:focus-visible {
 }
 
 .quantity_box_form {
+  width: 44px;
+  height: 25px;
+  box-sizing: border-box;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -1443,6 +1449,12 @@ button:focus-visible {
   border: solid 1px #EAEAEA;
   margin-left: 24px;
   padding: 0 16px;
+  /* убрать стрелки */
+  -moz-appearance: textfield;
+}
+
+.quantity_box_form::-webkit-inner-spin-button {
+  display: none;
 }
 
 .cart__product_button {
@@ -1847,14 +1859,13 @@ button:focus-visible {
   }
 
   .browse_all__button {
-    margin: 16px auto 0 auto;
+    margin: 16px auto 64.5px auto;
   }
 
   /* options */
   .options {
     max-height: 610px;
-    margin-top: 64.5px;
-    padding: 48px 204px 64px;
+    padding: 48px 0 64px;
   }
 
   .options__list {
@@ -1907,7 +1918,7 @@ button:focus-visible {
   }
 
   .pagination {
-    margin: 24px auto 0;
+    margin: 24px auto 63px;
   }
 
   /* product.html */
@@ -1916,7 +1927,7 @@ button:focus-visible {
 }
 
 /* адаптив для мобильных устройств */
-@media (max-width: 376px) {
+@media (max-width: 375.2px) {
 
   /* header */
   .page__header_box {
@@ -1998,12 +2009,11 @@ button:focus-visible {
   }
 
   .browse_all__button {
-    margin: 24px auto 0 auto;
+    margin: 24px auto 96px auto;
   }
 
   /* options */
   .options {
-    margin-top: 96px;
     padding: 48px 13px 81px 14px;
   }
 
@@ -2053,4 +2063,36 @@ button:focus-visible {
   }
 
   /* catalog.html */
+  .top__page_box {
+    flex-direction: column;
+  }
+
+  .top__page_title {
+    margin: 24px auto 32px;
+  }
+
+  .top__page_breadcrumb {
+    margin-bottom: 46px;
+  }
+
+  .filter__button span {
+    display: none;
+  }
+
+  .filter__button svg {
+    width: 82px;
+    height: 25px;
+    margin: 0;
+  }
+
+  .sorting {
+    max-width: 260px;
+  }
+
+  .sorting__link {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  /* доделать сортировку */
 }
