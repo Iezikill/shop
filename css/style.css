@@ -1457,6 +1457,7 @@ button:focus-visible {
 /* товары, добавленные в корзину */
 .cart__content {
   max-width: 652px;
+  width: 100%;
 }
 
 .cart__product {
@@ -1470,7 +1471,7 @@ button:focus-visible {
 
 .cart__product_img {
   width: 262px;
-  height: 306px;
+  /* height: 306px; */
 }
 
 .cart__product_desc {
@@ -1537,7 +1538,7 @@ button:focus-visible {
   fill: #575757;
   position: absolute;
   top: 9%;
-  right: 5%;
+  right: 3%;
 }
 
 .cart__product_button:hover {
@@ -1582,8 +1583,12 @@ button:focus-visible {
 }
 
 .cart__form {
-  max-width: 360px;
+
   margin-top: 18px;
+}
+
+.cart__form_input {
+  max-width: 360px;
 }
 
 /* адрес доставки */
@@ -1640,6 +1645,7 @@ button:focus-visible {
 
 /* итого к оплате */
 .cart__order {
+  max-width: 360px;
   width: 100%;
   background: #F5F3F3;
 }
@@ -2021,6 +2027,36 @@ button:focus-visible {
     margin: 128px auto 112px auto;
   }
 
+  /* cart.html */
+  .cart {
+    margin: 59px auto 71px;
+    display: block;
+  }
+
+  .cart__content {
+    max-width: 734px;
+  }
+
+  .cart__product {
+    margin: 0 0 40px 18px;
+  }
+
+  .cart__control {
+    max-width: 508px;
+    margin: 62px 0 64px 130px;
+  }
+
+  .cart__form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 768px;
+    margin: 0 16px;
+  }
+
+  .cart__order {
+    margin: 38px 0 85px;
+  }
+
 }
 
 /* адаптив для мобильных устройств */
@@ -2254,4 +2290,83 @@ button:focus-visible {
   .product_card3 {
     display: block;
   }
+
+  /* cart.html */
+  .title__cart_registration {
+    margin: 50px auto 69px;
+  }
+
+  .cart {
+    margin: 39px auto 96px;
+  }
+
+  .cart__content {
+    max-width: 358px;
+  }
+
+  .cart__product {
+    height: 188px;
+    margin: 0 8px 32px;
+  }
+
+  .cart__product_img {
+    width: 144px;
+  }
+
+  .cart__product_desc {
+    margin: 14px 56px 37px 17px;
+  }
+
+  .cart__product_title {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 26px;
+  }
+
+  .cart__product_item {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 4px;
+  }
+
+  .quantity_box_form {
+    width: 24px;
+    height: 15px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 0 8px;
+  }
+
+  .cart__product_button {
+    top: 7%;
+  }
+
+  .cart__product_button svg {
+    width: 10px;
+    height: 11px;
+  }
+
+  .cart__control {
+    margin: 30px 0 48px 8px;
+  }
+
+  .cart__control_button {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 9px 18px;
+  }
+
+  .cart__form {
+    display: block;
+    margin: 0 8px;
+  }
+
+  .cart__form_button {
+    margin: 23px 0 48px;
+  }
+
+  .cart__order {
+    margin: 0;
+  }
+
 }
