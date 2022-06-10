@@ -949,6 +949,10 @@ button:focus-visible {
   display: block;
 }
 
+#switch-filter:checked+.filter__button span {
+  color: #F16D7F;
+}
+
 .filter {
   width: 360px;
   padding: 13px 16px 16px 16px;
@@ -988,6 +992,10 @@ button:focus-visible {
 
 .filter__button:active {
   color: #222224;
+}
+
+.filter__button_wrp {
+  color: #F16D7F;
 }
 
 .filter__list_wrp {
@@ -1797,7 +1805,7 @@ button:focus-visible {
   color: #FFFFFF;
   text-transform: uppercase;
   background: #F16D7F;
-  border: none;
+  border: 1px solid #F16D7F;
   padding: 16px 29px;
 }
 
@@ -1819,7 +1827,7 @@ button:focus-visible {
 .registration__form_button:active {
   color: #FFFFFF;
   background: #F16D7F;
-  border: none;
+  border: 1px solid #F16D7F;
   transform: scale(1.1);
   transition: transform 1s;
 }
@@ -1855,8 +1863,21 @@ button:focus-visible {
   padding: 0 0 0 18px;
 }
 
-/* промежуточный адаптив на ширине 1080px-769px */
-@media (max-width:1080px) {
+/* промежуточный адаптив на ширине 1150px-769px */
+@media (max-width:1150px) {
+
+  .page__header_box,
+  .categories__list,
+  .copyright__box,
+  .top__page_box,
+  .card__box,
+  .registration,
+  .cart {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width:1110px) {
   .page__header_box {
     padding: 0 32px;
   }
@@ -1866,6 +1887,7 @@ button:focus-visible {
   }
 
   .categories__list {
+    padding: 0;
     justify-content: space-around;
   }
 
@@ -1873,9 +1895,6 @@ button:focus-visible {
     justify-content: space-around;
   }
 
-  .copyright__box {
-    padding: 0 32px;
-  }
 
   .top__page_box {
     margin: auto 16px;
@@ -1980,6 +1999,7 @@ button:focus-visible {
 
   .card__box {
     margin: 0 16px;
+    padding: 0;
   }
 
   .card {
@@ -2063,6 +2083,7 @@ button:focus-visible {
   .cart {
     margin: 59px auto 71px;
     display: block;
+    padding: 0;
   }
 
   .cart__content {
