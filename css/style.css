@@ -2469,6 +2469,10 @@ button:focus-visible {
   .registration {
     margin: 40px 8px 96px;
   }
+
+  .title__cart_registration {
+    margin: 59px auto;
+  }
 }
 
 @media (max-width:370px) {
